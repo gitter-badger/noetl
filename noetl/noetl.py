@@ -23,7 +23,7 @@ from __future__ import print_function
 import sys, os, datetime, time, re, logging, json, subprocess
 from Queue import *
 from threading import Thread
-from EvalJsonParser_revB import parseConfig
+from EvalJsonParser import parseConfig
 from distutils.command.config import config
 
 bug7980 = datetime.datetime.strptime("20140101","%Y%m%d") #bug http://bugs.python.org/issue7980
