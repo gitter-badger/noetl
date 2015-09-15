@@ -606,7 +606,7 @@ def main(argv=None):
                 print(datetime.datetime.now(), " - ERROR - - ospid: ",os.getpid(), " total execution time is: ", datetime.datetime.now() - batchDateTime, " Exception occurred in getting task with error: ",e ,file = log)
 
     except IndexError: 
-        configFileName="/Users/ctakahashi/git/etl_prod/deposits/amsterdam/dr1/cfg/amsterdam_revB.aws.cfg.dr1.json"
+        configFileName="test.aws.cfg.json"
         print(datetime.datetime.now()," - ERROR - ","Configuration file doesn't defined, will use default: " , configFileName)
 
     except Usage, err:
