@@ -1,7 +1,7 @@
 #!/usr/bin/python
 #
 # TITLE: noetl
-# AUTHORS: Alexey Kuksin, Casey Takahashi, Nodar Momtselidze, Elena Mishkina
+# AUTHORS: Alexey Kuksin, Casey Takahashi
 # DATE: 16-08-2015
 # OBJECTIVE: Manage process execution 
 #   
@@ -26,7 +26,7 @@ from threading import Thread
 from EvalJsonParser import parseConfig
 from distutils.command.config import config
 
-bug7980 = datetime.datetime.strptime("20140101","%Y%m%d") #bug http://bugs.python.org/issue7980
+bug7980 = datetime.datetime.strptime("200110101","%Y%m%d") #bug http://bugs.python.org/issue7980
 batchDateTime = datetime.datetime.now()
 
 def getConfig(cfg,confRequest, confCase=None):
