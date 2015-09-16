@@ -26,7 +26,7 @@ from threading import Thread
 from EvalJsonParser import parseConfig
 from distutils.command.config import config
 
-bug7980 = datetime.datetime.strptime("200110101","%Y%m%d") #bug http://bugs.python.org/issue7980
+bug7980 = datetime.datetime.strptime("20110101","%Y%m%d") #bug http://bugs.python.org/issue7980
 batchDateTime = datetime.datetime.now()
 
 def getConfig(cfg,confRequest, confCase=None):
@@ -84,12 +84,12 @@ def addTime(strDate1, strDate2, increment, incType='m', dateFormat="%Y%m"):
         date1, date2 = datetime.datetime.strptime(strDate1,dateFormat), datetime.datetime.strptime(strDate2,dateFormat)
         currentCursor = []
         timeDelta = datetime.timedelta(days=increment)
-        while date1 <= date2:
+        while date1 <= date2 - timeDelta:
             currentCursor.append(date1.strftime(dateFormat))
             if incType == 'y':
                 date1 = datetime.datetime(date1.year+increment, date1.month, date1.day)
             elif incType == 'm':
-                date1 = datetime.datetime(date1.year+((date1.month + increment)//12), (date1.month+increment)%12, date1.day)
+                date1 = datetime.datetime(date1.year+((date1.month + increment-1)//12), ((date1.month+increment-1)%12)+1, date1.day)
             elif incType == 'd':
                 date1 = date1 + timeDelta
     except:
