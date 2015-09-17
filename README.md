@@ -1,5 +1,5 @@
-# noetl
-NoETL (Not Only ETL) is a prototype of a system to manage the sequence of the process execution by controlling forks and child processes. 
+# NoETL
+NoETL (Not Only ETL) current python version is a prototype of a system to manage the sequence of the process execution by controlling forks and child processes. 
 
 Functionality is described on wiki - https://github.com/akuksin/noetl/wiki
 
