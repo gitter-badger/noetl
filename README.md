@@ -1,7 +1,9 @@
 # noetl
-NoETL (Not Only ETL) is a system to manage the sequence of the process execution by controlling forks and child processes. 
+NoETL (Not Only ETL) is a prototype of a system to manage the sequence of the process execution by controlling forks and child processes. 
 
-To execute the process assuming you cloned the repo to ~/projects/github folder, simply run:
+Functionality is described on wiki - https://github.com/akuksin/noetl/wiki
+
+To execute the process assuming you've just cloned the repo to ~/projects/github folder, simply run:
 
 python ~/projects/github/noetl/noetl/noetl.py ~/projects/github/noetl/conf/coursor.inherit.cfg.v1.json
 
